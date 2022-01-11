@@ -1,3 +1,8 @@
+*{
+  list-style: none;
+  color: #00fdff;
+}
+
 nav {
   width: 100%;
 }
@@ -61,5 +66,513 @@ nav.navbar ul li a:hover:after {
   margin-top: 100px;
 }
 
+/* SKILLS BAR*/
+
+.skill-bars{
+  padding: 25px 30px;
+  width: auto;
+  background: transparent;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.html span{
+  width: 72%;
+}
+.bar .progress-line.css span{
+  width: 64%;
+}
+.bar .progress-line.java span{
+  width: 57%;
+}
+.bar .progress-line.flutter span{
+  width: 45%;
+}
+.bar .progress-line.boot span{
+  width: 59%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "72%";
+}
+.progress-line.css span::after{
+  content: "64%";
+}
+.progress-line.java span::after{
+  content: "57%";
+}
+.progress-line.flutter span::after{
+  content: "45%";
+}
+.progress-line.boot span::after{
+  content: "59%";
+}
 
 
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+/* skill cards*/
+.wrapper{
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .card{
+  background: transparent;
+  width: calc(33% - 20px);
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
+/*text animation*/
+
+.jt {
+  position: relative;
+  font-size: 20vmin;
+  font-family: 'Staatliches', sans-serif;
+  text-transform: uppercase;
+  font-display: swap;
+  text-shadow: 0 0 10px;
+}
+
+.jt__row {
+  display: block;
+}
+.jt__row:nth-child(1) {
+  clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+}
+.jt__row:nth-child(2) {
+  clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+}
+.jt__row:nth-child(3) {
+  clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+}
+.jt__row:nth-child(4) {
+  clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+}
+
+.jt__row.jt__row--sibling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+
+.jt__text {
+  display: block;
+  transform-origin: bottom left;
+  animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+}
+.jt__row:nth-child(1) .jt__text {
+  transform: translateY(-0.1em);
+}
+.jt__row:nth-child(2) .jt__text {
+  transform: translateY(-0.3em) scaleY(1.1);
+}
+.jt__row:nth-child(3) .jt__text {
+  transform: translateY(-0.5em) scaleY(1.2) ;
+}
+.jt__row:nth-child(4) .jt__text {
+  transform: translateY(-0.7em) scaleY(1.3) ;
+}
+.jt__row:nth-child(5) .jt__text {
+  transform: translateY(-0.9em) scaleY(1.4) ;
+}
+.jt__row:nth-child(6) .jt__text {
+  transform: translateY(-1.1em) scaleY(1.5) ;
+}
+
+@keyframes moveIn {
+  50%, 100% { 
+    transform: translateY(0em)
+  }
+  0%   { 
+  opacity: 0; 
+  filter: blur(10px);
+  
+  }
+  100% { 
+  opacity: 1; 
+  filter: blur(0px);
+  }
+}
+
+.debug .jt__row:nth-child(even) {
+  color: black;
+  background: white;
+}
+.debug .jt__row:nth-child(odd) {
+  color: white;
+  background: black;
+}
+
+* { box-sizing: border-box }
+
+/*Back to top*/
+
+.back-to-top{
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom:30px;
+  right: 10px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+.back-to-top::after {
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+.back-to-top:hover{
+  cursor: pointer;
+  background-color:transparent;
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon{
+  font-size: 30px;
+}
+
+/*Text-Animation Two*/
+
+.j {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Staatliches', sans-serif;
+  text-transform: uppercase;
+  font-display: swap;
+  text-shadow: 0 0 5px;
+}
+
+.jt_row {
+  display: block;
+}
+.jt_row:nth-child(1) {
+  clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+}
+.jt_row:nth-child(2) {
+  clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+}
+.jt_row:nth-child(3) {
+  clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+}
+.jt_row:nth-child(4) {
+  clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+}
+
+.jt_row.jt_row--sibling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+
+.jt_text {
+  display: block;
+  transform-origin: bottom left;
+  animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+}
+.jt_row:nth-child(1) .jt_text {
+  transform: translateY(-0.1em);
+}
+.jt_row:nth-child(2) .jt_text {
+  transform: translateY(-0.3em) scaleY(1.1);
+}
+.jt_row:nth-child(3) .jt_text {
+  transform: translateY(-0.5em) scaleY(1.2) ;
+}
+.jt_row:nth-child(4) .jt_text {
+  transform: translateY(-0.7em) scaleY(1.3) ;
+}
+.jt_row:nth-child(5) .jt_text {
+  transform: translateY(-0.9em) scaleY(1.4) ;
+}
+.jt_row:nth-child(6) .jt_text {
+  transform: translateY(-1.1em) scaleY(1.5) ;
+}
+
+@keyframes moveIn {
+  50%, 100% { 
+    transform: translateY(0em)
+  }
+  0%   { 
+  opacity: 0; 
+  filter: blur(3px);
+  
+  }
+  100% { 
+  opacity: 1; 
+  filter: blur(0px);
+  }
+}
+
+.debug .jt_row:nth-child(even) {
+  color: black;
+  background: white;
+}
+.debug .jt_row:nth-child(odd) {
+  color: white;
+  background: black;
+}
+
+* { box-sizing: border-box }
+
+/*Vertical Timeline Thing*/
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-50px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(10px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+.edu{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

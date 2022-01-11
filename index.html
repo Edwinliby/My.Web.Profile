@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title>Edwin Liby</title>
+    <link rel="icon" type="image/x-icon" href="me.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -21,13 +22,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body id="t" class="offline" style="background-color: ghostwhite">
+<body id="t" class="offline" style="background-color: rgb(49, 49, 49)">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:black;">
-        <div class="container-fluid" style="margin-left: 5%; margin-right: 5%; margin-top: 2%;">
+        <div class="container-fluid" style="margin-left: 5%; margin-right: 5%; ">
             <a class="navbar-brand" href="">
-                <h3>Edwin.</h3>
+                <img src="sig.jpg" style="width: 110px; height: 50px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,45 +39,195 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
-                    <li><a href="#"><i class="uil uil-estate"></i> About</a></li>
-                    <li><a href="#"><i class="uil uil-analytics"></i> skills</a></li>
-                    <li><a href="#"><i class="uil uil-basketball"></i> Game</a></li>
-                    <li><a href="#"><i class="uil uil-message"></i> Contact</a></li>
+                    <li><a href="#hero"><i class="uil uil-estate"></i> Home</a></li>
+                    <li><a href="#skill"><i class="uil uil-analytics"></i> skills</a></li>
+                    <li><a href="#game"><i class="uil uil-basketball"></i> T-rex</a></li>
+                    <li><a href="#contact"><i class="uil uil-message"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="welcome" class="welcome">
-        <div class="container" style="padding-top: 35px; padding-bottom: 35px;">
-            <div class="col-md-12 text-center">
-                <h1>Edwin Liby</h1>
-                <p>A Student by Day and Engineer by Night</p>
-            </div>
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center" style="padding-top: 100px;">
+            <h2 class="jt --debug">
+                <span class="jt__row">
+                  <span class="jt__text">Edwin Liby</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">Edwin Liby</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">Edwin Liby</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">Edwin Liby</span>
+                </span>
+              </h2>
+        </div>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h2 class="j --debug">
+                <span class="jt_row">
+                  <span class="jt_text">A student by day Engineer by night</span>
+                </span>
+                <span class="jt_row jt_row--sibling" aria-hidden="true">
+                  <span class="jt_text">A student by day Engineer by night</span>
+                </span>
+                <span class="jt_row jt_row--sibling" aria-hidden="true">
+                  <span class="jt_text">A student by day Engineer by night</span>
+                </span>
+                <span class="jt_row jt_row--sibling" aria-hidden="true">
+                  <span class="jt_text">A student by day Engineer by night</span>
+                </span>
+              </h2>
+        </div>
+        <div class="social-links" style="padding-top: 20px;">
+            <a class="icon" href="https://www.facebook.com/edwin.liby.73/" class="facebook" style="padding: 25px;"><i class="uil uil-facebook-f"></i></a>
+            <a class="icon" href="https://www.instagram.com/e_kuttan/" class="instagram" style="padding: 25px;"><i class="uil uil-instagram"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/edwin-liby-12b7a5220" class="linkedin" style="padding: 25px;"><i class="uil uil-linkedin"></i></a>
+            <a class="icon" href="https://github.com/Edwinliby" class="github" style="padding: 25px;"><i class="uil uil-github-alt"></i></a>
         </div>
     </section>
 
-    <section id="skill" class="skill">
-        <div class="container" style="text-align: center;">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-                                      
+    <section id="about" class="about"  data-aos="fade-right">
+        <div class="container" style="background-color: transparent; padding-top: 100px; padding-bottom: 100px;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="single-about-txt">
+                            <h3 style="color: white;">
+                                I'm a student pursuing a bachelor's degree in Computer-Science. I'm a lot into music and
+                                Football, and I love Food🤤 apart from that, I love Web Development, Physics, UI/UX
+                                Designing, Programming ,Cross Platform Application development.
+                            </h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="single-about-add-info">
+                                        <h3 style="color: white;">Email</h3>
+                                        <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiX5Mrmgqn1AhUhSmwGHdJMBdMQFnoECAgQAQ&url=https%3A%2F%2Fwww.google.com%2Fgmail%2F&usg=AOvVaw3mZ_qbD_gQyp_sqkjrwStn"><span>edwinliby30@gmail.com</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-                   
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                   
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                   
-                </div>
-            </div>
         </div>
     </section>
-
-    <section id="game" class="game">
+    
         <div class="container">
+            <div class="edu">
+                <div class="timeline">
+                    <ul>
+                      <li>
+                        <div class="timeline-content" data-aos="fade-up">
+                          <h3 class="date">2008-2018</h3>
+                          <h1>Basic School Education</h1>
+                          <p style="color: white;">MMAR School<br>Chenagnnur, Kerala<br>Where I learnt all the basic stuffs and with good old memories.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="timeline-content" data-aos="fade-up">
+                          <h3 class="date">2018-2020</h3>
+                          <h1>High-School</h1>
+                          <p style="color: white;">MMAR Central School<br>Chenagnnur, Kerala<br>Best years of my life, where i started to participate in lots of events and workshops and again good old memories.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="timeline-content" data-aos="fade-up">
+                          <h3 class="date">2020-2024</h3>
+                          <h1>B.Tech in Computer Science</h1>
+                          <p style="color: white;">College of Engineering Aranmula<br>Aranmula, Kerala<br>Life is full of surprises...</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            
+    <br><br>
+    <section id="skill" style="padding-top: 50px;" data-aos="fade-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h2>Front-End Stack</h2>
+                    <div class="skill-bars">
+                        <div class="bar">
+                            <div class="info">
+                                <span style="color: white;">HTML</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span style="color: white;">CSS</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span style="color: white;">JavaScript</span>
+                            </div>
+                            <div class="progress-line java">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span style="color: white;">Flutter</span>
+                            </div>
+                            <div class="progress-line flutter">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span style="color: white;">Bootstrap</span>
+                            </div>
+                            <div class="progress-line boot">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <div class="container" style="padding-top: 20px;">
+                        <h2>Skills</h2>
+                        <div class="wrapper">
+                            <div class="card" data-aos="fade-up">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Figma</div>
+                            </div>
+                            <div class="card js" data-aos="fade-up">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Gaming</div>
+                            </div>
+                            <div class="card react" data-aos="fade-up">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Communication</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game"  data-aos="fade-up">
+        <div id="game" class="container">
             <div class="col-md-12">
                 <div id="messageBox" class="sendmessage">
                     <div class="niokbutton" onclick="okbuttonsend()"></div>
@@ -99,7 +253,102 @@
             </div>
         </div>
     </section>
+    <section id="contact" class="contact" style="padding-top: 150px;">
+        <div class="container-fluid" style="background-color: black;">
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+                    <div class="info" style="padding-left: 25px; padding-top: 50px;">
+                        <h2 style="color: white;">Contact</h2>
+                        <div class="address">
+                            <h4><i class="uil uil-location-point" style="color: white;"> Location:</i></h4>
+                            <p style="color: white;">Angadical, Puthencavu P.O, Chengannur</p>
+                        </div>
+                        <div class="email">
+                            <h4><i class="uil uil-envelope" style="color: white;"> Email:</i> </h4>
+                            <p style="color: white;">edwinliby30@gmail.com</p>
+                        </div>
+                        <div class="phone">
+                            <h4><i class="uil uil-mobile-android" style="color: white;"> Call:</i></h4>      
+                            <p style="color: white;">+91 8156877090</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-sm-12 col-md-6 d-flex align-items-stretch">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="padding-top: 50px; padding-bottom: 30px;">
+                        <div class="row" data-aos="fade-up">
+                            <div class="form-group col-md-6">
+                                <label for="name" style="color: white;">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name" style="color: white;">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="color: white;">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="color: white;">Message</label>
+                            <textarea class="form-control" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="text-center"><button type="submit" style="color: white; background-color:rgb(49, 49, 49); border-style: none;">Send Mail</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="back-to-top"><i class="uil uil-angle-double-up"></i></a>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: white;">
+                © Copyright 2022 Edwin Liby
+            </div>
+        </div>
+    </footer>  
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.85,
+            fill: { gradient: ['#a445b2', '#fa4299'] }
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+            function (event, progress, stepValue) {
+                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".js .bar").circleProgress({
+            value: 0.70
+        });
+        $(".react .bar").circleProgress({
+            value: 0.60
+        });
+    </script>
+    <script>
+        var btn = $('.back-to-top');
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+         btn.addClass('show');
+        } else {
+         btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+         e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+        });
+    </script>
 </body>
 
 <script>
