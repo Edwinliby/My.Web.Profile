@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- for sliging animation -->
     <script src="index.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
@@ -29,16 +26,16 @@
         <div class="container1">
             <h2 class="jt --debug">
                 <span class="jt__row">
-                    <span class="jt__text">Edwin Liby</span>
+                    <span class="jt__text">eKuttan</span>
                 </span>
                 <span class="jt__row jt__row--sibling" aria-hidden="true">
-                    <span class="jt__text">Edwin Liby</span>
+                    <span class="jt__text">eKuttan</span>
                 </span>
                 <span class="jt__row jt__row--sibling" aria-hidden="true">
-                    <span class="jt__text">Edwin Liby</span>
+                    <span class="jt__text">eKuttan</span>
                 </span>
                 <span class="jt__row jt__row--sibling" aria-hidden="true">
-                    <span class="jt__text">Edwin Liby</span>
+                    <span class="jt__text">ekuttan</span>
                 </span>
             </h2>
         </div>
@@ -59,14 +56,13 @@
                 </span>
             </h2>
         </div>
-
-        <div>
-            <a class="icons" href="https://www.facebook.com/edwin.liby.73/">🡭Facebook</a>
-            <a class="icons" href="https://www.instagram.com/e_kuttan/">🡭Instagram</a>
-            <a class="icons" href="http://www.linkedin.com/in/edwin-liby-12b7a5220">🡭LinkedIn</a>
-            <a class="icons" href="https://github.com/Edwinliby">🡭Github</a>
-        </div>
     </section>
+    <div class="icons">
+        <a href="https://www.facebook.com/edwin.liby.73/">🡭Facebook</a>
+        <a href="https://www.instagram.com/e_kuttan/">🡭Instagram</a>
+        <a href="http://www.linkedin.com/in/edwin-liby-12b7a5220">🡭LinkedIn</a>
+        <a href="https://github.com/Edwinliby">🡭Github</a>
+    </div>
 
     <section id="about" data-aos="fade-right">
         <div class="about">
@@ -74,7 +70,8 @@
             Football, and I love Food🤤 apart from that, I love Web Development, Physics, UI/UX
             Designing, Programming ,Cross Platform Application development. <br> <br> <span
                 style="color: gold;">Email:</span>
-            <a class="email" href="mailto:edwinliby30@gmail.com"><span>edwinliby30@gmail.com</span></a>
+            <a class="email" href="mailto:edwinliby30@gmail.com"><span
+                    style="font-size: .5em;">edwinliby30@gmail.com</span></a>
         </div>
     </section>
 
@@ -153,26 +150,53 @@
 
         <h2 class="front">Skills</h2>
         <div class="wrapper">
-            <div class="card" data-aos="fade-up">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg class="one">
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <svg>
+                                    <div class="num">
+                                        <h2>80<span>%</span></h2>
+                                    </div>
+                        </div>
+                        <h2 class="text">UI/UX</h2>
+                    </div>
                 </div>
-                <div class="text">UI/UX</div>
             </div>
-            <div class="card js" data-aos="fade-up">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg class="two">
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <svg>
+                                    <div class="num">
+                                        <h2>100<span>%</span></h2>
+                                    </div>
+                        </div>
+                        <h2 class="text">GYM</h2>
+                    </div>
                 </div>
-                <div class="text">GYM </div>
             </div>
-            <div class="card react" data-aos="fade-up">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            <svg class="three">
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <svg>
+                                    <div class="num">
+                                        <h2>65<span>%</span></h2>
+                                    </div>
+                        </div>
+                        <h2 class="text">EDITING</h2>
+                    </div>
                 </div>
-                <div class="text">EDITING</div>
             </div>
         </div>
     </section>
@@ -180,9 +204,9 @@
     <section class="game" data-aos="fade-up">
         <div id="game" class="game">
             <div id="messageBox" class="sendmessage">
+                <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;">Press Space to start</h1>
                 <div class="niokbutton" onclick="okbuttonsend()"></div>
             </div>
-            <h2 style="text-align: center;">Wanna play some game !</h2>
             <div id="main-frame-error" class="interstitial-wrapper">
                 <div id="main-content">
                     <div class="icon icon-offline" alt=""></div>
@@ -247,10 +271,10 @@
     <a href="#" class="back-to-top">🡩</a>
 
     <footer>
-        <span>© Copyright 2022 Edwin Liby |<a class="foot" href="https://512kb.club/">512KB</a></span>
+        <span>© Copyright 2022 Edwin Liby |<a class="foot" href="https://512kb.club/"
+                style="color: gold;">512KB</a></span>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
