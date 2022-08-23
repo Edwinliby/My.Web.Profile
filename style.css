@@ -60,8 +60,8 @@ a:hover {
   margin-left: 1em;
 }
 
-.icon {
-  margin-top: .5em;
+.icons {
+  margin-top: 1em;
   color: #a445b2;
 }
 
@@ -437,7 +437,7 @@ h3 {
   bottom: 30px;
   right: 10px;
   transition: background-color .3s,
-    opacity .5s, visibility .5s;
+  opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -557,9 +557,6 @@ h3 {
   background: black;
 }
 
-* {
-  box-sizing: border-box
-}
 
 /*Vertical Timeline Thing*/
 .edu {
