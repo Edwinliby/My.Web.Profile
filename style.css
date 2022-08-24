@@ -3,7 +3,7 @@
   color: #00fdff;
   background-color: rgb(49, 49, 49);
   font-family: 'Share Tech Mono', monospace;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -63,6 +63,7 @@ a:hover {
 
 .icons {
   display: flexbox;
+  justify-content: space-around;
   margin-top: 4em;
 }
 
@@ -688,7 +689,7 @@ svg circle {
 }
 
 .timeline-content p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 30px;
   font-weight: 300;
 }
